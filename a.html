@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>Pramaan — AI-powered heritage product authentication platform</title>
+</head>
+
+
+
+<body>
+
+
+<h2 class="sr-only">Pramaan — AI-powered heritage product authentication platform</h2>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">PRAM<span>AA</span>N</div>
+  <div class="nav-links" id="nav-links">
+    <a href="aura.html">How It Works</a>
+    <a href="aura.html">Products</a>
+    <a href="aura.html">AI Guardian</a>
+    <a href="aura.html">Artisans</a>
+    <a href="aura.html">Verify</a>
+    <button class="nav-btn" id="mobile-nav-btn" style="display:none;">Launch App</button>
+  </div>
+  <div style="display:flex; gap:1rem; align-items:center;">
+    <button class="nav-btn" id="desktop-nav-btn">Launch App</button>
+    <button class="hamburger" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24">
+        <path d="M3 12h18M3 6h18M3 18h18" />
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:5rem">
+  <svg class="hero-bg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="motif" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 5 L55 30 L30 55 L5 30 Z" fill="none" stroke="#C9922A" stroke-width="0.8" />
+      <circle cx="30" cy="30" r="4" fill="none" stroke="#C9922A" stroke-width="0.8" />
+      <circle cx="30" cy="5" r="2" fill="#C9922A" />
+      <circle cx="55" cy="30" r="2" fill="#C9922A" />
+      <circle cx="30" cy="55" r="2" fill="#C9922A" />
+      <circle cx="5" cy="30" r="2" fill="#C9922A" />
+    </pattern>
+    <rect width="800" height="600" fill="url(#motif)" />
+  </svg>
+
+  <div class="hero-left reveal">
+    <div class="hero-tag">
+      <span></span> Live on Polygon — 12,441 items authenticated
+    </div>
+    <h1>Ancient Craft,<br><em>Mathematically</em><br>Protected.</h1>
+    <p class="hero-sub">Pramaan deploys an autonomous AI Guardian and distributed ledger to defend GI-tagged heritage
+      artisans — so a master weaver in Bishnupur captures the true market value of her craft.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Verify a Product</button>
+      <button class="btn-secondary">Register as Artisan</button>
+    </div>
+  </div>
+
+  <div class="hero-right reveal" style="transition-delay: 0.2s">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="scan-header">
+          <span class="app-name">Pramaan</span>
+          <span style="font-size:0.65rem;opacity:0.6">Polygon · Block 48,221</span>
+        </div>
+        <div class="verify-badge">
+          <div class="check">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div class="verify-text">
+            Cryptographically Verified
+            <span>Authentic GI-tagged product</span>
+          </div>
+        </div>
+        <div class="product-card-phone">
+          <div class="product-img-ph">
+            <svg class="saree-pattern" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="sp" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="none" stroke="#C9922A" stroke-width="1" />
+              </pattern>
+              <rect width="100" height="100" fill="url(#sp)" />
+            </svg>
+            <span class="product-icon">🧵</span>
+          </div>
+          <div class="product-info-ph">
+            <h4>Baluchari Silk Saree</h4>
+            <p>Woven by Ananya Devi · Bishnupur, WB</p>
+            <div class="product-meta">
+              <span class="meta-tag">GI Tag #WB-2409</span>
+              <span class="meta-tag">Batch #405</span>
+            </div>
+          </div>
+        </div>
+        <div class="journey-section">
+          <div class="journey-title">Provenance Journey</div>
+          <div class="journey-step">
+            <div class="step-dot filled"></div>
+            <div class="step-info"><strong>Artisan Workshop</strong><span>Bishnupur — 12 Mar 2025</span></div>
+          </div>
+          <div class="journey-step">
+            <div class="step-dot filled"></div>
+            <div class="step-info"><strong>Cooperative Verified</strong><span>Bankura GI Society</span></div>
+          </div>
+          <div class="journey-step">
+            <div class="step-dot filled"></div>
+            <div class="step-info"><strong>Export Logged</strong><span>Kolkata Port — 28 Mar</span></div>
+          </div>
+          <div class="journey-step">
+            <div class="step-dot"></div>
+            <div class="step-info"><strong>Consumer Scan</strong><span>Awaiting...</span></div>
+          </div>
+        </div>
+        <button class="tip-btn">Send Micro-tip to Artisan →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item reveal">
+    <div class="stat-num">12,441</div>
+    <div class="stat-label">Items on-chain</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">847</div>
+    <div class="stat-label">Artisans protected</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">3,210</div>
+    <div class="stat-label">Counterfeits flagged</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">₹0.04</div>
+    <div class="stat-label">Cost per authentication</div>
+  </div>
+</div>
+
+<div class="pattern-divider"></div>
+
+<!-- HOW IT WORKS -->
+<section style="background:var(--cream)">
+  <div style="text-align:center;margin-bottom:3rem">
+    <div class="section-tag">The Phygital Handshake</div>
+    <h2 style="margin:0 auto;max-width:500px">From loom to living room — every step secured</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-card reveal">
+      <div class="how-num">01</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        </svg>
+      </div>
+      <h3>NFC Thread Attached</h3>
+      <p>The artisan weaves a cryptographic NFC thread or secure QR directly into the product at the time of creation —
+        unforgeable, tamper-evident.</p>
+    </div>
+    <div class="how-card reveal">
+      <div class="how-num">02</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 8v4l3 3" />
+        </svg>
+      </div>
+      <h3>WhatsApp Bot Mints NFT</h3>
+      <p>The artisan simply says "I finished saree batch #405" via a voice message. Our LangChain agent handles smart
+        contract execution automatically.</p>
+    </div>
+    <div class="how-card reveal">
+      <div class="how-num">03</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+          <path
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      </div>
+      <h3>Supply Chain Logged</h3>
+      <p>Each warehouse scan, cooperative check, and export clearance updates the immutable ledger — a living provenance
+        record on Polygon L2.</p>
+    </div>
+    <div class="how-card reveal">
+      <div class="how-num">04</div>
+      <div class="how-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3>Consumer Verifies</h3>
+      <p>The buyer taps their phone — a mobile web app shows the exact origin, artisan video, and cryptographic proof of
+        authenticity. One tap, total trust.</p>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<!-- AI GUARDIAN -->
+<section class="ai-section">
+  <div class="ai-grid">
+    <div class="reveal">
+      <div class="section-tag">Autonomous Protection</div>
+      <h2>The AI Guardian never sleeps.</h2>
+      <p class="section-desc">An autonomous agent continuously scrapes major e-commerce sites and social media. It uses
+        computer vision to detect counterfeit listings and autonomously issues cryptographic fraud reports.</p>
+      <div class="ai-features">
+        <div class="ai-feat">
+          <div class="ai-feat-icon">
+            <svg viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <div>
+            <h4>Computer Vision Scan</h4>
+            <p>Detects counterfeit product images across Meesho, Flipkart, Amazon, and Instagram using trained vision
+              models fine-tuned on GI-tagged goods.</p>
+          </div>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">
+            <svg viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div>
+            <h4>Automated Takedown Notices</h4>
+            <p>Cross-references listings against the authentic blockchain supply and autonomously files platform
+              takedown requests with cryptographic proof-of-fraud.</p>
+          </div>
+        </div>
+        <div class="ai-feat">
+          <div class="ai-feat-icon">
+            <svg viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h4>Real-time Alerts</h4>
+            <p>Artisans receive instant WhatsApp notifications when a counterfeit of their work is detected — with
+              evidence and status updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ai-feed reveal" style="transition-delay: 0.2s">
+      <div class="feed-header">
+        <div class="live-dot"></div>
+        AI Guardian — Live Feed
+      </div>
+      <div class="feed-item">
+        <div class="feed-status status-blocked"></div>
+        <div class="feed-text">
+          <strong>Counterfeit blocked</strong> — Listing "Authentic Baluchari Silk" on Meesho cross-checked: 0 matching
+          hashes found on ledger
+          <div class="feed-time">2 minutes ago · Takedown filed</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <div class="feed-status status-verify"></div>
+        <div class="feed-text">
+          <strong>Authentication success</strong> — Consumer scan in Berlin verified Darjeeling First Flush #TN-2024-881
+          <div class="feed-time">11 minutes ago</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <div class="feed-status status-scan"></div>
+        <div class="feed-text">
+          <strong>New batch minted</strong> — Artisan Rekha Mondal registered Dhaniakhali Cotton batch #12 via WhatsApp
+          voice message
+          <div class="feed-time">34 minutes ago · Block 48,219</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <div class="feed-status status-blocked"></div>
+        <div class="feed-text">
+          <strong>Fraud pattern detected</strong> — 14 near-identical listings using stolen product images from artisan
+          Priya Das's portfolio
+          <div class="feed-time">1 hour ago · Vision model flagged</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <div class="feed-status status-verify"></div>
+        <div class="feed-text">
+          <strong>KYC verified</strong> — New artisan Suresh Karmakar approved via Bishnupur Weavers' Cooperative
+          Society integration
+          <div class="feed-time">2 hours ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<!-- PRODUCTS -->
+<section style="background:var(--cream-dark)">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem">
+    <div>
+      <div class="section-tag">On the Ledger</div>
+      <h2 style="margin:0">Featured authentic heritage goods</h2>
+    </div>
+    <button class="btn-secondary" id="view-all-btn">View All Products</button>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-img">
+        🧵
+        <span class="gi-badge">GI Tag Verified</span>
+      </div>
+      <div class="product-body">
+        <h3>Baluchari Silk Saree</h3>
+        <p>Hand-woven in Bishnupur with mythological motifs from the Ramayana. Each piece takes 3–5 weeks to complete.
+        </p>
+        <div class="product-footer">
+          <div class="artisan-name">
+            Ananya Devi
+            <span>Bishnupur, West Bengal</span>
+          </div>
+          <button class="view-btn">Verify →</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img" style="background:linear-gradient(135deg,#E8F5EE,#C0DD97)">
+        🍃
+        <span class="gi-badge">GI Tag Verified</span>
+      </div>
+      <div class="product-body">
+        <h3>Darjeeling First Flush Tea</h3>
+        <p>Harvested from elevation-grown bushes in the Himalayan foothills. The most counterfeited tea on earth — now
+          protected.</p>
+        <div class="product-footer">
+          <div class="artisan-name">
+            Makaibari Estate
+            <span>Darjeeling, West Bengal</span>
+          </div>
+          <button class="view-btn">Verify →</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#FAEEDA,#FAC775)">
+            🏺
+            <span class="gi-badge">GI Tag Verified</span>
+        </div>
+        <div class="product-body">
+            <h3>Bankura Terracotta Horse</h3>
+            <p>The iconic folk artifact of West Bengal, hand-crafted in Panchmura village using techniques passed down over
+            400 years.</p>
+            <div class="product-footer">
+            <div class="artisan-name">
+                Ratan Kumar Pal
+                <span>Panchmura, Bankura</span>
+            </div>
+            <button class="view-btn">Verify →</button>
+            </div>
+        </div>
+        </div>
+  
+    <div class="product-card reveal extra-product">
+  <div class="product-img">🪵<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Saharanpur Wood Craft</h3>
+    <p>Hand-carved wooden decor pieces known for intricate Mughal-style patterns.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Irfan Ali<span>UP, India</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🧶<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Kullu Shawl</h3>
+    <p>Traditional wool shawls woven in Himachal with geometric borders.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Meena Thakur<span>Kullu</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🖌️<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Madhubani Painting</h3>
+    <p>Ancient Mithila art form using natural dyes and symbolic motifs.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Sita Devi<span>Bihar</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🧂<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Marayoor Jaggery</h3>
+    <p>Unrefined jaggery made from sugarcane grown in Kerala hills.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Ravi Kumar<span>Kerala</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🥻<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Chanderi Saree</h3>
+    <p>Lightweight sarees with sheer texture and fine zari work.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Pooja Sharma<span>MP</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🍯<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Sundarbans Honey</h3>
+    <p>Wild forest honey collected from mangrove regions.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Local Collectors<span>WB</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+  </div>
+</div>
+
+<div class="product-card reveal extra-product">
+  <div class="product-img">🧺<span class="gi-badge">GI Tag Verified</span></div>
+  <div class="product-body">
+    <h3>Cane & Bamboo Craft</h3>
+    <p>Eco-friendly baskets and decor items from Northeast India.</p>
+    <div class="product-footer">
+      <div class="artisan-name">Rinchen<span>Assam</span></div>
+      <button class="view-btn">Verify →</button>
+    </div>
+ </div>
+</div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<!-- TESTIMONIALS -->
+<div class="testimonial-section">
+  <div class="section-tag" style="text-align:center;margin-bottom:0.5rem">Voices from the community</div>
+  <h2 style="text-align:center;margin-bottom:2.5rem">Those who Pramaan protects</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card reveal">
+      <blockquote>"Earlier, I would spend all day explaining why my sarees are genuine. Now I just say: scan the tag.
+        The blockchain knows."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar">AD</div>
+        <div class="author-info">
+          <strong>Ananya Devi</strong>
+          <span>Master weaver · Bishnupur</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <blockquote>"I finally bought Darjeeling tea with confidence. I could see the exact garden, the exact harvest
+        date. That transparency changed everything."</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar">SM</div>
+        <div class="author-info">
+          <strong>Sophie Müller</strong>
+          <span>Conscious consumer · Berlin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VERIFY DEMO -->
+<section class="scan-section">
+  <div class="scan-demo">
+    <div class="reveal">
+      <div class="section-tag">Try It Now</div>
+      <h2>Verify any product on the ledger</h2>
+      <p class="section-desc">Enter a product hash or scan an NFC tag. The blockchain doesn't lie — you'll know in under
+        two seconds whether what you hold is real.</p>
+      <div class="scan-input-area">
+        <label>Product Hash or Tag ID</label>
+        <input type="text" id="hashInput" placeholder="e.g. 0x3f4a...d82c or Batch #405" />
+        <button class="btn-primary" style="width:100%" onclick="runVerify()">Authenticate on Ledger</button>
+      </div>
+      <div style="margin-top:0.75rem;font-size:0.72rem;color:var(--ink-light)">Try: <code
+          style="color:var(--gold)">BALUCHARI-405</code> or <code style="color:var(--gold)">DARJ-2024-881</code></div>
+    </div>
+    <div class="reveal" style="transition-delay: 0.2s">
+      <div class="scan-result" id="scanResult">
+        <div class="result-verified">
+          <div class="big-check">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div class="r-text">
+            <h4>Cryptographically Verified</h4>
+            <p id="resultSub">Authentic GI-tagged product on Polygon</p>
+          </div>
+        </div>
+        <div class="result-detail" id="resultDetail">
+          <div class="detail-item"><label>Product</label><span id="rProduct">—</span></div>
+          <div class="detail-item"><label>Artisan</label><span id="rArtisan">—</span></div>
+          <div class="detail-item"><label>Origin</label><span id="rOrigin">—</span></div>
+          <div class="detail-item"><label>Minted</label><span id="rDate">—</span></div>
+          <div class="detail-item"><label>GI Tag</label><span id="rGI">—</span></div>
+          <div class="detail-item"><label>Block</label><span id="rBlock">—</span></div>
+        </div>
+        <div class="hash-display" id="rHash">—</div>
+        <button class="btn-primary" style="width:100%">Send Micro-tip to Artisan</button>
+      </div>
+      <div id="notFoundResult"
+        style="display:none;padding:2rem;border:1px solid rgba(226,75,74,0.3);background:#fff;color:#A32D2D;font-size:0.85rem;line-height:1.6">
+        <strong style="display:block;margin-bottom:0.5rem;font-family:'Cormorant Garamond',serif;font-size:1.1rem">Not
+          found on ledger.</strong>
+        This product ID has no matching record on the Polygon blockchain. This item may be counterfeit — our AI Guardian
+        has been alerted.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="pattern-divider"></div>
+<footer>
+  <div class="footer-brand">
+    <div class="logo">PRAM<span>AA</span>N</div>
+    <p>An autonomous digital workforce protecting the economic rights of India's heritage artisans — secured by the
+      mathematical certainty of the blockchain.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Platform</h4>
+    <a>Verify a Product</a>
+    <a>Artisan Registry</a>
+    <a>AI Guardian</a>
+    <a>API Access</a>
+  </div>
+  <div class="footer-col">
+    <h4>For Artisans</h4>
+    <a>Register</a>
+    <a>KYC Process</a>
+    <a>WhatsApp Bot</a>
+    <a>Royalty Claims</a>
+  </div>
+  <div class="footer-col">
+    <h4>Ecosystem</h4>
+    <a>GI Tag Directory</a>
+    <a>Cooperative Partners</a>
+    <a>Export Houses</a>
+    <a>Government Boards</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 Pramaan · Protecting heritage through cryptographic certainty</p>
+  <div class="chain-badge">Polygon L2 · Mainnet</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
